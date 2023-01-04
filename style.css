@@ -1,0 +1,779 @@
+@import 'https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap';
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #3b3737;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 20px;
+    border: 3px solid rgb(122, 115, 115);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: radial-gradient(#000000, #ffffff);
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+:root {
+    --main-color: #f4f4f4;
+    --spawn: .8s;
+    --background: linear-gradient(25deg, rgba(255, 255, 255, .1), rgb(0, 0, 0));
+    --first: rgb(255, 80, 0);
+    --second: rgb(255, 85, 0);
+    --third: rgb(255, 90, 0);
+    --fourth: rgb(255, 95, 0);
+    --fifth: rgb(255, 100, 0);
+    --sixth: rgb(255, 105, 0);
+    --seventh: rgb(255, 110, 0);
+    --eighth: rgb(255, 115, 0);
+    --ninth: rgb(255, 120, 0);
+    --tenth: rgb(255, 125, 0);
+    --eleventh: rgb(255, 130, 0);
+    --twelfth: rgb(255, 135, 0);
+    --thirteenth: rgb(255, 140, 0);
+    --fourteenth: rgb(255, 145, 0);
+    --fifthteenth: rgb(255, 150, 0);
+    --sixthteenth: rgb(255, 155, 0);
+    --seventhteenth: rgb(255, 160,0);
+    --eighteenth: rgb(255, 165, 0);
+    --nineteenth: rgb(255, 170,0);
+    --twentieth: rgb(255, 175, 0);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+
+.separator {
+    z-index: 10;
+    position: relative;
+    width: 1vw;
+    height: 5px;
+    border-radius: 20px;
+    background-color: var(--fifthteenth);
+    margin: auto;
+}
+
+.separator::before,
+.separator::after {
+    position: absolute;
+    content: "";
+    width: 4750%;
+    height: 5px;
+    border-radius: 2px;
+    margin: auto;
+}
+
+.separator::before {
+    left: 230%;
+    background: linear-gradient(45deg, var(--fifthteenth), var(--fourteenth), var(--thirteenth), var(--twelfth), var(--eleventh), var(--tenth), var(--ninth), var(--eighth), var(--seventh), var(--sixth), var(--fifth), var(--fourth), var(--third), var(--second), var(--first));
+}
+
+.separator::after {
+    right: 230%;
+    background: linear-gradient(45deg, var(--first), var(--second), var(--third), var(--fourth), var(--fifth), var(--sixth), var(--seventh), var(--eighth), var(--ninth), var(--tenth), var(--eleventh), var(--twelfth), var(--thirteenth), var(--fourteenth), var(--fifthteenth));
+}
+
+.separator-project {
+    z-index: 10;
+}
+
+/*-----------------------------------------NAV SECTION--------------------------------------------------------*/
+
+.nav-bar {
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+li>a:hover span:nth-child(1) {
+    color: var(--first);
+    transition: 0.1s;
+}
+
+li>a:hover span:nth-child(2) {
+    color: var(--fourth);
+    transition: 0.2s;
+}
+
+li>a:hover span:nth-child(3) {
+    color: var(--sixth);
+    transition: 0.3s;
+}
+
+li>a:hover span:nth-child(4) {
+    color: var(--eighth);
+    transition: 0.4s;
+}
+
+li>a:hover span:nth-child(5) {
+    color: var(--ninth);
+    transition: 0.5s;
+}
+
+li>a:hover span:nth-child(6) {
+    color: var(--eleventh);
+    transition: 0.6s;
+}
+
+li>a:hover span:nth-child(7) {
+    color: var(--fourteenth);
+    transition: 0.7s;
+}
+
+.nav-bar span {
+    transition: color 1s;
+}
+
+ul {
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: #000;
+}
+
+li {
+    list-style: none;
+    padding-left: 20px;
+    transition: var(--spawn);
+}
+
+a {
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/*****************************************WELCOME SECTION******************************************************/
+
+.welcome-section span,
+.contact-section span {
+    transition: color 2s;
+}
+
+.hover:hover .welcome-section header span:nth-child(1) {
+    color: var(--first);
+    transition: color .1s;
+}
+
+.hover:hover .welcome-section header span:nth-child(2) {
+    color: var(--second);
+    transition: .2s;
+}
+
+.hover:hover .welcome-section header span:nth-child(3) {
+    color: var(--third);
+    transition: .3s;
+}
+
+.hover:hover .welcome-section header span:nth-child(4) {
+    color: var(--fourth);
+    transition: .4s;
+}
+
+.hover:hover .welcome-section header span:nth-child(5) {
+    color: var(--fifth);
+    transition: .5s;
+}
+
+.hover:hover .welcome-section header span:nth-child(6) {
+    color: var(--sixth);
+    transition: .6s;
+}
+
+.hover:hover .welcome-section header span:nth-child(7) {
+    color: var(--seventh);
+    transition: .7s;
+}
+
+.hover:hover .welcome-section header span:nth-child(8) {
+    color: var(--eighth);
+    transition: .8s;
+}
+
+.hover:hover .welcome-section header span:nth-child(9) {
+    color: var(--ninth);
+    transition: .9s;
+}
+
+.hover:hover .welcome-section header span:nth-child(10) {
+    color: var(--tenth);
+    transition: 1s;
+}
+
+.hover:hover .welcome-section header span:nth-child(11) {
+    color: var(--eleventh);
+    transition: 1.1s;
+}
+
+.hover:hover .welcome-section header span:nth-child(12) {
+    color: var(--twelfth);
+    transition: 1.2s;
+}
+
+.hover:hover .welcome-section header span:nth-child(13) {
+    color: var(--thirteenth);
+    transition: 1.3s;
+}
+
+.hover:hover .welcome-section header span:nth-child(14) {
+    color: var(--fourteenth);
+    transition: 1.4s;
+}
+
+.hover:hover .welcome-section header span:nth-child(15) {
+    color: var(--fifthteenth);
+    transition: 1.5s;
+}
+
+.hover:hover .welcome-section header span:nth-child(16) {
+    color: var(--sixthteenth);
+    transition: 1.6s;
+}
+
+.hover:hover .welcome-section header span:nth-child(17) {
+    color: var(--seventhteenth);
+    transition: 1.7s;
+}
+
+.hover:hover .welcome-section header span:nth-child(18) {
+    color: var(--eighteenth);
+    transition: 1.8s;
+}
+
+.hover:hover .welcome-section header span:nth-child(19) {
+    color: var(--nineteenth);
+    transition: 1.9s;
+}
+
+.hover:hover .welcome-section header span:nth-child(20) {
+    color: var(--twentieth);
+    transition: 2.0s;
+}
+
+.welcome-section {
+    margin-top: 50px;
+    padding:  0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: var(--background);
+}
+
+header {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    font-size: 80px;
+    font-weight: 700;
+    color: var(--main-color);
+    transition: var(--spawn);
+}
+
+.welcome-section p {
+    opacity: .4;
+    position: relative;
+    z-index: 1;
+    color: var(--main-color);
+    font-size: 30px;
+    font-weight: 100;
+    font-style: italic;
+    text-align: center;
+    /* transition: var(--spawn); */
+    transition: 2.0s;
+}
+
+.hover:hover .welcome-paragraph span:first-child {
+    color: var(--sixth);
+    transition: color 1s;
+}
+
+.hover:hover .welcome-paragraph span:nth-child(2) {
+    color: var(--sixth);
+    transition: color 1.2s;
+}
+
+.hover:hover .welcome-paragraph span:nth-child(3) {
+    color: var(--sixth);
+    transition: color 1.4s;
+}
+
+.hover:hover .welcome-paragraph span:nth-child(4) {
+    color: var(--sixth);
+    transition: color 1.6s;
+}
+
+.hover:hover .welcome-paragraph span:nth-child(5) {
+    color: var(--sixth);
+    transition: color 1.8s;
+}
+
+.hover:hover .welcome-paragraph span:nth-child(6) {
+    color: var(--sixth);
+    transition: color 2s;
+}
+
+.hover:hover .welcome-paragraph span:nth-child(7) {
+    color: var(--sixth);
+    transition: color 2.2s;
+}
+
+.hover:hover .welcome-paragraph span:nth-child(8) {
+    color: var(--sixth);
+    transition: color 2.4s;
+}
+
+.hover:hover .welcome-paragraph span:nth-child(9) {
+    color: var(--sixth);
+    transition: color 2.6s;
+}
+
+.hover:hover .welcome-paragraph span:nth-child(10) {
+    color: var(--sixth);
+    transition: color 2.8s;
+}
+
+.hover:hover .welcome-paragraph span:nth-child(11) {
+    color: var(--sixth);
+    transition: color 3s;
+}
+
+.hover:hover .welcome-paragraph span:nth-child(12) {
+    color: var(--sixth);
+    transition: color 3.2s;
+}
+
+.hover:hover .welcome-paragraph span:nth-child(13) {
+    color: var(--sixth);
+    transition: color 3.4s;
+}
+
+.hover:hover .welcome-paragraph span:nth-child(14) {
+    color: var(--sixth);
+    transition: color 3.6s;
+}
+
+.hover:hover .welcome-paragraph span:nth-child(15) {
+    color: var(--sixth);
+    transition: color 3.8s;
+}
+
+.hover:hover .welcome-paragraph span:nth-child(16) {
+    color: var(--sixth);
+    transition: color 4s;
+}
+
+.hover:hover .welcome-paragraph span:nth-child(17) {
+    color: var(--sixth);
+    transition: color 4.2s;
+}
+
+.hover:hover .welcome-paragraph span:nth-child(18) {
+    color: var(--sixth);
+    transition: color 4.4s;
+}
+
+.hover:hover .welcome-paragraph span:nth-child(19) {
+    color: var(--sixth);
+    transition: color 4.6s;
+}
+
+.hover:hover .welcome-paragraph span:nth-child(20) {
+    color: var(--sixth);
+    transition: color 4.8s;
+}
+
+.hover:hover .welcome-paragraph span:nth-child(21) {
+    color: var(--sixth);
+    transition: color 5s;
+}
+
+.hover:hover .welcome-paragraph span:nth-child(22) {
+    color: var(--sixth);
+    transition: color 5.2s;
+}
+
+.hover:hover .welcome-paragraph span:nth-child(23) {
+    color: var(--sixth);
+    transition: color 5.4s;
+}
+
+/*-----------------------------------------PROJECT SECTION----------------------------------------------------*/
+
+.projects-section {
+    width: 100%;
+    height: 140vh;
+
+    position: relative;
+    background: var(--background);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 25vw 0;
+}
+
+.projects-title {
+    position: relative;
+    padding-top: 7vw;
+    text-align: center;
+    color: var(--main-color);
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.projects-section span {
+    transition: color 2s;
+}
+
+.projects-section:hover .projects-title span:first-child {
+    color: var(--first);
+    transition: color .2s;
+}
+
+.projects-section:hover .projects-title span:nth-child(2) {
+    color: var(--second);
+    transition: color .4s;
+}
+
+.projects-section:hover .projects-title span:nth-child(3) {
+    color: var(--third);
+    transition: color .6s;
+}
+
+.projects-section:hover .projects-title span:nth-child(4) {
+    color: var(--fourth);
+    transition: color .8s;
+}
+
+.projects-section:hover .projects-title span:nth-child(5) {
+    color: var(--fifth);
+    transition: color 1s;
+}
+
+.projects-section:hover .projects-title span:nth-child(6) {
+    color: var(--sixth);
+    transition: color 1.2s;
+}
+
+.projects-section:hover .projects-title span:nth-child(7) {
+    color: var(--seventh);
+    transition: color 1.4s;
+}
+
+.projects-section:hover .projects-title span:nth-child(8) {
+    color: var(--eighth);
+    transition: color 1.6s;
+}
+
+.projects-section:hover .projects-title span:nth-child(9) {
+    color: var(--ninth);
+    transition: color 1.8s;
+}
+
+.projects-section:hover .projects-title span:nth-child(10) {
+    color: var(--tenth);
+    transition: color 2s;
+}
+
+.grid {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 300px;
+    grid-gap: 6rem 2rem;
+
+}
+
+.projects-link {
+    position: relative;
+}
+
+
+.projects-link:hover .img-title {
+    background: linear-gradient(45deg, var(--first), var(--first), var(--first), var(--second), var(--second), var(--second), var(--third), var(--fourth), var(--fifth), var(--sixth), var(--seventh), var(--eighth), var(--ninth), var(--tenth), var(--eleventh), var(--twelfth), var(--thirteenth), var(--fourteenth), var(--fifthteenth));
+}
+
+.img-projects {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+   
+    
+}
+
+.img-title {
+    background: #FFBC9D;
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+    color: black;
+}
+
+
+/*---------------------------------------------CONTACT-SECTION-------------------------------------------------*/
+
+
+.contact-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+    background: var(--background);
+    
+}
+
+.contact-title {
+    padding-top: 0vw;
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    font-weight: 600;
+    
+}
+
+.contact-section:hover .contact-title span:nth-child(1) {
+    color: var(--first);
+    transition: color .1s;
+}
+
+.contact-section:hover .contact-title span:nth-child(2) {
+    color: var(--second);
+    transition: .2s;
+}
+
+.contact-section:hover .contact-title span:nth-child(3) {
+    color: var(--third);
+    transition: .3s;
+}
+
+.contact-section:hover .contact-title span:nth-child(4) {
+    color: var(--fourth);
+    transition: .4s;
+}
+
+.contact-section:hover .contact-title span:nth-child(5) {
+    color: var(--fifth);
+    transition: .5s;
+}
+
+.contact-section:hover .contact-title span:nth-child(6) {
+    color: var(--sixth);
+    transition: .6s;
+}
+
+.contact-section:hover .contact-title span:nth-child(7) {
+    color: var(--seventh);
+    transition: .7s;
+}
+
+.contact-section:hover .contact-title span:nth-child(8) {
+    color: var(--eighth);
+    transition: .8s;
+}
+
+.contact-section:hover .contact-title span:nth-child(9) {
+    color: var(--ninth);
+    transition: .9s;
+}
+
+.contact-section:hover .contact-title span:nth-child(10) {
+    color: var(--tenth);
+    transition: 1s;
+}
+
+.contact-section:hover .contact-title span:nth-child(11) {
+    color: var(--eleventh);
+    transition: 1.1s;
+}
+
+.contact-section:hover .contact-title span:nth-child(12) {
+    color: var(--twelfth);
+    transition: 1.2s;
+}
+
+.contact-section:hover .contact-title span:nth-child(13) {
+    color: var(--thirteenth);
+    transition: 1.3s;
+}
+
+.contact-section:hover .contact-title span:nth-child(14) {
+    color: var(--fourteenth);
+    transition: 1.4s;
+}
+
+.contact-section:hover .contact-title span:nth-child(15) {
+    color: var(--fifthteenth);
+    transition: 1.5s;
+}
+
+.contact-section:hover .contact-title span:nth-child(16) {
+    color: var(--sixthteenth);
+    transition: 1.6s;
+}
+
+.contact-section:hover .contact-title span:nth-child(17) {
+    color: var(--seventhteenth);
+    transition: 1.7s;
+}
+
+.contact-section:hover .contact-title span:nth-child(18) {
+    color: var(--first);
+    transition: 1.8s;
+}
+
+.social {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    padding: 0 40px;
+
+    font-size: 60px;
+    color: #fff;
+}
+
+.icon,
+.icon-p {
+    position: relative;
+    bottom: 60px;
+}
+
+.icon-p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.icon,
+.icon-p {
+    transition: 1s;
+}
+
+.social a:hover .icon {
+    font-size: 70px;
+    color: var(--second);
+    transition: 1s;
+}
+
+.social a:hover .icon-p {
+    color: var(--seventh);
+    transition: color 1s;
+}
+
+/*--------------------------------------------------FOOTER-----------------------------------------------------*/
+
+footer p {
+    text-align: center;
+
+    margin: 10px;
+    color: white;
+}
+
+/*---------------------------------------------MEDIA QUERIES---------------------------------------------------*/
+@media (max-width: 900px) {
+    .grid {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 125px;
+        grid-gap: 2rem 2rem;
+    }
+}
+
+
+@media (max-width: 700px) {
+    ul {
+        justify-content: center;
+    }
+
+    .icon {
+        padding: 0 30px;
+        font-size: 35px;
+        color: #fff;
+    }
+
+    .social a:hover .icon {
+        font-size: 45px;
+    }
+
+    .icon-p {
+        font-size: 12px;
+    }
+
+    .separator::after {
+        right: 50%;
+    }
+
+    .separator::before {
+        left: 50%;
+    }
+}
+
+@media (max-width: 500px) {
+    .icon {
+        padding: 0 20px;
+        font-size: 35px;
+        color: #fff;
+    }
+}
+
+@media (max-width: 350px) {
+    .icon {
+        padding: 0 20px;
+        font-size: 25px;
+        color: #fff;
+    }
+
+    .social a:hover .icon {
+        font-size: 35px;
+    }
+
+    .icon-p {
+        font-size: 10px;
+    }
+
+}
